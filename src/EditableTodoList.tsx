@@ -14,7 +14,10 @@ function EditableTodoList({todos, dispatch}: EditableTodoListProps){
     return(
         <>
         {todos.map((todo) => (
-            <EditableTodo todo={todo} dispatch={dispatch} />
+            <EditableTodo 
+            key={todo.id}
+            todo={todo} 
+            dispatch={dispatch} />
         ))}
         </>
     )
