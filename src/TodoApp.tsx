@@ -73,6 +73,15 @@ function todoReducer(state: ITodo[], action:ITodoAction): ITodo[] {
 function TodoApp({initialTodos = DEFAULT_TODOS}){
     const [todos, dispatch] = useReducer(todoReducer, initialTodos);
 
+    function handleSave(formData: ITodo){
+      const action = {
+        type: "CREATE",
+        payload: {...formData},
+    }
+    
+    dispatch(action)
+    }
+
     return(
         <main className="TodoApp">
         <div className="row">
@@ -95,7 +104,7 @@ function TodoApp({initialTodos = DEFAULT_TODOS}){
             )} */}
             <section>
               <h3 className="mb-3">Add Nü</h3>
-              <TodoForm handleSave={dispatch} action={"CREATE"} />
+              <TodoForm handleSave={handleSave} action={"CREATE"} />
             </section>
           </div>
 

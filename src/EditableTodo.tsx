@@ -33,7 +33,12 @@ function EditableTodo({todo, dispatch}: EditableTodoProps){
   }
 
   /** updates the current todo */
-  function handleSave(action: ITodoAction){
+  function handleSave(formData:ITodo){
+    const action = {
+        type: "UPDATE",
+        payload: {...formData, id: todo.id},
+    }
+
     dispatch(action)
     toggleEdit()
   }
