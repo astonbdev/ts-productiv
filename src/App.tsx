@@ -2,7 +2,10 @@ import TodoApp from './TodoApp'
 import './App.css'
 import "bootstrap/dist/css/bootstrap.css";
 
-
+/**
+ * 
+ * renders TodoApp
+ */
 function App() {
 
   return (

@@ -5,7 +5,7 @@ const defaultInitialFormData = { title: "", description: "", priority: 1 };
 /** Form for adding.
  *
  * Props:
- * - initialFormData
+ * - initialFormData - {title, description, priority}
  * - handleSave: function to call in parent.
  *
  * { TodoApp, EditableTodo } -> TodoForm

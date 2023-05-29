@@ -18,9 +18,10 @@ interface ITodoFormData {
 
 type TodoDispatch = Dispatch<ITodoAction>
 
+/* Helper Type for forms*/
 type TodoInputElements = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
 
-
+/** Prop Types */
 type TodoAppProps = { initialTodos: ITodo[] }
 type EditableTodoProps = { todo: ITodo, dispatch: TodoDispatch }
 type EditableTodoListProps = { todos: ITodo[], dispatch: TodoDispatch }

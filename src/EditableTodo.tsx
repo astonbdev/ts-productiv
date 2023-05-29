@@ -4,10 +4,10 @@ import TodoForm from './TodoForm'
 
 /** Show editable todo item.
  *
- * Props
+ * Props:
  * - todo
- * - dispatch: fn to call to change a todo:
- *      action: REMOVE, CREATE, UPDATE
+ * - dispatch: reducer fn to act on a todo:
+ *      action(s): REMOVE, CREATE, UPDATE
  *
  * EditableTodoList -> EditableTodo -> { Todo, TodoForm }
  */

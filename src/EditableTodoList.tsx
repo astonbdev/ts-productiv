@@ -4,8 +4,7 @@ import EditableTodo from "./EditableTodo"
  *
  * Props:
  * - todos: array of [ todo, ... ]
- * - update(): fn to call to update a todo
- * - remove(): fn to call to remove a todo
+ * - dispatch: reducer fn to handle add/remove/update
  *
  * TodoApp -> EditableTodoList -> [ EditableTodo, ... ]
  */
